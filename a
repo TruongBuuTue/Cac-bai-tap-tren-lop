@@ -1,0 +1,22 @@
+#include "stdio.h"
+#include "conio.h"
+// cho so nguyen duong n voi 10000<=n<=99999 duoc nhap tu  ban phim
+// In ra man hinh tong cac ky so n
+int main(){
+	int n; // so nguyen duong n
+	int sodu; 
+	int tong; // tong cac ky so n
+	// In ra ma hinh so nguyen duong n
+	printf("Nhap so nguyen duong n = ");
+	scanf("%d", &n);
+	// Thuc hien cac cau lenh
+	if (10000<=n && n<=99999){
+	while(n>0){
+		sodu = n % 10; // so du cua n chia cho 10
+		tong = tong + sodu; 
+		n = n/10; 
+	}
+}
+	printf("tong cac ky so cua n : %d ", tong);
+}
+	
